@@ -1,0 +1,8 @@
+open
+read
+write
+fall
+asd
+qwe
+rfif
+asd

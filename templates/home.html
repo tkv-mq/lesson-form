@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        Сайт для заметок
+    </div>
+    <h1>Заметки</h1>
+    <ol>
+        {% for i in note_lst %}
+            <li>{{i}}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}
