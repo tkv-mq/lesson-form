@@ -22,7 +22,7 @@ def add_note_form():
 def add_note():
     note = request.form
     note_file = open("note.txt", "a+", encoding="utf-8")
-    data = note['new-note'] + ' ' + note['new-date'] + "\n"
+    data = note['new-note'] + ',' + note['new-date'] + "\n"
     note_file.write(data)
     note_file.close()
     return render_template("ok.html")
@@ -31,7 +31,7 @@ def add_note():
 def table():
     note = open('note.txt', 'r+', encoding='utf-8')
     temp = note.read().split('\n')
-    nd_lst = [i.split(' ') for i in temp]
+    nd_lst = [i.split(',') for i in temp]
     del nd_lst[-1]
     note.close()
     return render_template("table_lst.html", nd_lst=nd_lst)
