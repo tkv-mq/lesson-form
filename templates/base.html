@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}Notes{% endblock %}
-    </title>
+    <title>Notes</title>
 </head>
 <body>
     <div>
         <a href="{{ url_for('home') }}">Главная</a>
         <a href="{{ url_for('hello', user_name='аноним') }}">Привет</a>
         <a href="{{ url_for('add_note_form') }}">Добавить заметку</a>
+        <a href="{{ url_for('table') }}">Таблица</a>
     </div>
     <hr>
     {% block content %}

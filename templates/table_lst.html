@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table border="1">
+    <tr>
+        <th>Заметка</th>
+        <th>Дата</th>
+    </tr>
+    {% for i, j in nd_lst %}
+        <tr>
+            <td>{{i}}</td>
+            <td>{{j}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
