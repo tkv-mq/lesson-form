@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    note = open("note.txt", "a+", encoding="utf-8")
-    note_lst = [i for i in note]
+    note = open("note.txt", "r+", encoding="utf-8")
+    note_lst = [i.split(',') for i in note]
     note.close()
     return render_template('home.html', note_lst=note_lst)
 

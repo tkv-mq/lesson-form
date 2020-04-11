@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div>
+    <h1>
         Сайт для заметок
-    </div>
-    <h1>Заметки</h1>
+    </h1>
+    <h2>Заметки</h2>
     <ol>
-        {% for i in note_lst %}
-            <li>{{i}}</li>
+        {% for i, j in note_lst %}
+            <li>{{ i }} | {{ j }}</li>
         {% endfor %}
     </ol>
 {% endblock %}
