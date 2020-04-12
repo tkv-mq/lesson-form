@@ -1,0 +1,58 @@
+.content {
+    height: 80vh;
+    width: 90vw;
+    background-color: lightsteelblue;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 5px 5px lightslategray;
+}
+
+#menu {
+    height: 30px;
+    width: 90vw;
+    background-color: #3c3c3c;
+    font-size: 24px;
+    margin: 3px;
+    padding: 10px 20px;
+    box-shadow: 10px 5px darkgray;
+}
+
+.menu_elements {
+    color: lightgreen;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.menu_elements:hover {
+    opacity: 1;
+}
+
+table {
+    width: 50%;
+    font-size: 18px;
+    background: #5c5c5c;
+}
+
+tr {
+    text-align: center;
+    background: #5c5c5c;
+    color: white;
+    opacity: 1;
+}
+
+tr:hover {
+    opacity: 0.5;
+}
+
+.hello {
+    color: green;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    padding: 10px;
+}

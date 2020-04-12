@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
+    <style>
+        a { text-decoration: none;}
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='note.css') }}">
 </head>
 <body>
-    <div>
-        <a href="{{ url_for('home') }}">Главная</a> |
-        <a href="{{ url_for('hello', user_name='аноним') }}">Привет</a> |
-        <a href="{{ url_for('add_note_form') }}">Добавить заметку</a> |
-        <a href="{{ url_for('table') }}">Таблица</a>
+    <div id="menu">
+        <a class="menu_elements" href="{{ url_for('home') }}">Главная</a> |
+        <a class="menu_elements" href="{{ url_for('hello', user_name='аноним') }}">Привет</a> |
+        <a class="menu_elements" href="{{ url_for('add_note_form') }}">Добавить заметку</a> |
+        <a class="menu_elements" href="{{ url_for('table') }}">Таблица</a>
     </div>
     <hr>
-    {% block content %}
+    <div class="content">
+        {% block content %}
     
-    {% endblock %}
+        {% endblock %}
+    </div>
 </body>
 </html>
